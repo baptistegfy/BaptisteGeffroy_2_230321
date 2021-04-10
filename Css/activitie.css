@@ -1,6 +1,7 @@
 #activitie-at{
 margin: 1rem 0;
 padding: 0 5%;
+grid-row: 3;
 }
 
 .ctivitie-title {
@@ -60,37 +61,33 @@ padding: 0 5%;
   background-image: url(../image/activitie/parc-lonchamp-small.jpg);
 }
 
-@media screen and (min-width: 667){
+@media screen and (min-width: 667px){
   .activitie-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .col1{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .col2{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 1rem;
+  }
+  .col3{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .col4{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
-@media screen and (min-width: 1024px) {
-  #activitie-at{
-  }
-  .activitie-grid{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .vieux-port {
-
-  }
-
-  .promegues{
-
-  }
-
-  .frioul{
-
-    }
-  .calanques{
-
-  }
-  .la-garde{
-  
-  }
-  .longchamp{
-
+@media screen and (min-width: 1024px){
+    .activitie-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

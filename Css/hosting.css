@@ -69,10 +69,11 @@ padding: 0.5rem 1rem;
   background-image: url(../image/hosting/hotel-chez-amina-small.jpg);
 }
 
-@media screen and (min-width: 667px) {
+  @media screen and (min-width: 667px) {
   #hosting-at{
     background: #f2f2f2;
     border-radius: 25px;
+    margin-left: 2rem;
   }
 
   .hosting-grid {
@@ -81,11 +82,7 @@ padding: 0.5rem 1rem;
   }
 }
 
-@media screen and (min-width: 1024) {
-  #hosting-at {
-    margin-left: 2rem;
-  }
-
+  @media screen and (min-width: 1024px) {
   .hosting-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
