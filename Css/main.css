@@ -22,13 +22,9 @@ main{
     grid-gap: 1rem;
   }
 
-@media screen and (min-width: 667px) {
-  main {
+@media screen and (max-width: 667px){
+  .hosting-popular{
     display: grid;
-    grid-template-rows: auto ;
-  }
-
-  .hosting-popular {
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
   }
