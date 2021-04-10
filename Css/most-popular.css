@@ -75,7 +75,7 @@ background-color: #F2F2F2;
 @media screen and (min-width: 667px) {
   #most-popular{
     border-radius: 25px;
-    order: 1;
     margin-right: 2rem;
+    order: 1;
   }
   }
