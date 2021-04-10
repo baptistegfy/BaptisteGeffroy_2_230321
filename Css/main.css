@@ -1,1 +1,35 @@
 @import url(./search.css);
+@import url(./most-popular.css);
+@import url(./hosting.css);
+@import url(./activitie.css);
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.blue {
+  color:  #0065FC;
+}
+
+.grey {
+  color: #F2F2F2;
+}
+
+  .hosting-popular {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+@media screen and (min-width: 667px) {
+  main {
+    display: grid;
+    grid-template-rows: auto ;
+  }
+
+  .hosting-popular {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+  }
+}
