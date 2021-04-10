@@ -1,0 +1,90 @@
+#hosting-at {
+padding: 0 5%;
+}
+
+.hosting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.hosting-card {
+  border: 3px solid #FFF;
+  border-radius: 26px;
+  box-shadow: 0 0 15px rgba(0,0,0, 0.25)
+}
+
+.hosting-card-img {
+  background: #C4C4C4;
+  padding-top: 30%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hosting-card-info {
+padding: 0.5rem 1rem;
+}
+
+.hosting-card-info p {
+  margin: 0;
+}
+
+.hosting-card-title {
+  font-weight: 600;
+}
+
+.hosting-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 600;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.img-cannebiere {
+    background-image: url(../image/hosting/auberge-la-cannebiere-small.jpg);
+}
+
+.img-port {
+  background-image: url(../image/hosting/hotel-du-port-small.jpg);
+}
+
+.img-mouettes {
+  background-image: url(../image/hosting/hotel-les-mouettes-small.jpg);
+}
+
+.img-de-la-mer {
+  background-image: url(../image/hosting/hotel-de-la-mer-small.jpg);
+}
+
+.img-panier {
+  background-image: url(../image/hosting/auberge-le-panier-small.jpg);
+}
+
+.img-amina {
+  background-image: url(../image/hosting/hotel-chez-amina-small.jpg);
+}
+
+  @media screen and (min-width: 667px) {
+  #hosting-at{
+    background: #f2f2f2;
+    border-radius: 25px;
+    margin-left: 2rem;
+  }
+
+  .hosting-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+  @media screen and (min-width: 1024px) {
+  .hosting-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
