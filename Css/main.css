@@ -1,1 +1,29 @@
 @import url(./search.css);
+@import url(./most-popular.css);
+@import url(./hosting.css);
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.blue {
+  color:  #0065FC;
+}
+
+.grey {
+  color: #F2F2F2;
+}
+
+@media screen and (min-width: 667px) {
+  main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .hosting-popular {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+  }
+}

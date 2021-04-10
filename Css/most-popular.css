@@ -1,0 +1,81 @@
+#most-popular{
+padding: 5%;
+background-color: #F2F2F2;
+}
+
+.most-popular-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-card{
+  width: 100%;
+  border: 3px solid #FFF;
+  border-radius: 25px;
+  background: #FFF;
+  display: flex;
+  box-shadow: 0 0 15px rgba(0,0,0, 0.25)
+}
+
+.popular-card-img {
+  background-position: center;
+  background-size: cover;
+  padding-left: 50%;
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+}
+
+.popular-card-info {
+  padding: 0.5rem 1rem;
+}
+
+.popular-card-info p {
+  margin: 0;
+}
+
+.popular-card-title {
+  font-weight: 600;
+}
+
+.popular-card-text {
+  margin-bottom: 1.5rem;
+}
+
+.popular-card-rate {
+  padding-top: 2rem;
+}
+
+.popular-card-rate i {
+  font-size: 0.5rem;
+}
+
+.soleil-du-matin {
+  margin-bottom:  1rem;
+}
+
+.tout-bleu-et-blanc {
+  margin-top: 1rem;
+}
+
+.img-soleil-matin {
+  background-image: url(../image/popular/Hotel-le-soleil-du-matin-small.jpg);
+}
+
+.img-coeur-eau {
+  background-image: url(../image/popular/au-coeur-de-leau-chambre-hote-small.jpg);
+}
+
+.img-bleu-blanc {
+  background-image: url(../image/popular/Hotel-tout-bleu-et-blanc-small.jpg);
+  background-position: center 70%;
+}
+
+@media screen and (min-width: 667px) {
+  #most-popular{
+    border-radius: 25px;
+    order: 1;
+    margin-right: 2rem;
+  }
+  }
