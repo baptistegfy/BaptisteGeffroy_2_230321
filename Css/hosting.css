@@ -71,6 +71,7 @@ padding: 0.5rem 1rem;
 
   @media screen and (min-width: 667px) {
   #hosting-at{
+    padding: 1rem;
     background: #f2f2f2;
     border-radius: 25px;
     margin-left: 2rem;
