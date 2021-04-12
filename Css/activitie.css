@@ -28,11 +28,10 @@ grid-row: 3;
   background-repeat: no-repeat;
   background-position: center ;
   background-size: 100%;
-  /* background-image: url(../image/activitie/vieux-port-small.jpg); */
 }
 
 .activitie-card-title {
-  padding: 0 1rem;
+  padding: 0 1rem 1rem 1rem;
   font-weight: 600;
 }
 
@@ -66,6 +65,20 @@ grid-row: 3;
     grid-template-columns: 1fr 1fr;
   }
 
+  .img-vieux-port {
+    height: 60%;
+    background-size: cover;
+  }
+
+  .img-les-calanques {
+    background-size: cover;
+    padding-top: 77%;
+  }
+
+  .img-fort-pomegues {
+    background-size: cover;
+    padding-top: 51%;
+  }
   .col1{
     display: grid;
     grid-template-rows: 1fr;
@@ -87,7 +100,24 @@ grid-row: 3;
 }
 
 @media screen and (min-width: 1024px){
-    .activitie-grid {
+  .activitie-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .img-fort-pomegues {
+    padding-top: 84%;
+  }
+
+  .img-les-calanques {
+    padding-top: 162%;
+  }
+
+  .img-la-garde {
+    padding-top: 66%;
+  }
+
+  .img-parc-longchamp {
+    background-image: url(../image/activitie/parc-lonchamp-small.jpg);
+    padding-top: 66%;
   }
 }
