@@ -16,7 +16,7 @@ main{
   color: #F2F2F2;
 }
 
-  .hosting-popular {
+  #hosting-popular {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -24,11 +24,10 @@ main{
 
 @media screen and (min-width: 667px) {
   main {
-    display: grid;
     grid-template-rows: auto ;
   }
 
-  .hosting-popular {
+  #hosting-popular {
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
   }
