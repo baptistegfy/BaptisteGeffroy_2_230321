@@ -11,7 +11,8 @@ padding: 0 5%;
 .hosting-card {
   border: 3px solid #FFF;
   border-radius: 26px;
-  box-shadow: 0 0 15px rgba(0,0,0, 0.25)
+  box-shadow: 0 0 15px rgba(0,0,0, 0.25);
+  cursor: pointer;
 }
 
 .hosting-card-img {
