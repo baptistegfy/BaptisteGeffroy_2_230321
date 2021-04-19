@@ -31,6 +31,8 @@
   background: transparent;
   outline: none;
   padding: 1rem;
+  color: #000;
+  text-decoration: none;
 }
 
 .header-btn-activitie-desk {
@@ -42,6 +44,9 @@
   background: transparent;
   outline: none;
   padding: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .header-btn-signup {
@@ -50,6 +55,7 @@
   outline: none;
   color: #0065FC;
   padding: 1rem 0 1rem 1rem;
+  font-size: 1.1rem;
 }
 
 .header-mobile{
@@ -67,17 +73,22 @@
   border-bottom: 2px solid #0065FC;
   border-left:0;
   outline: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
 }
 .header-btn-activitie-mobile{
   width: 50%;
   padding: 1rem;
-  color: #000;
   background-color: transparent;
   border-top:0;
   border-right: 0;
   border-bottom: 2px solid #F2F2F2;
   border-left:0;
   outline: none;
+    color: #000;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
