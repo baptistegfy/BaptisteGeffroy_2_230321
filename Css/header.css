@@ -41,7 +41,7 @@
   font-size: 1rem;
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 1024px) {
   #header{
     grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
