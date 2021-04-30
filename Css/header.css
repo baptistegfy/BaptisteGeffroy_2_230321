@@ -1,104 +1,74 @@
-#header {
-  width: 100%;
+#header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
-.header-desk {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-site {
+.header--logo{
+  grid-area: 1/1/2/2;
   padding-left: 5%;
 }
-
-.header-btn-block {
-  padding-right: 5%;
-  height: 100%;
+.header--hosting-btn{
+  grid-area: 2/1/3/2;
   display: flex;
-}
-
-.header-btn-block button {
-  margin: 0 0.5rem;
-}
-
-.header-btn-hosting-desk {
-  display: none;
-  border-top: solid 2px #0065FC;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 0;
-  background: transparent;
-  outline: none;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #0065FC;
+  padding: 0 1rem;
   color: #000;
   text-decoration: none;
+  font-size: 1rem;
 }
-
-.header-btn-activitie-desk {
-  display: none;
-  border-top: solid 2px #F2F2F2;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 0;
-  background: transparent;
-  outline: none;
-  padding: 1rem;
+.header--activitie-btn{
+  grid-area: 2/2/3/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #f2f2f2;
+  padding: 0 1rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.header--signup-btn{
+  grid-area: 1/2/2/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+  padding-right: 5%;
   color: #000;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.header-btn-signup {
-  border: none;
-  background: transparent;
-  outline: none;
-  color: #0065FC;
-  padding: 1rem 0 1rem 1rem;
-  font-size: 1.1rem;
-}
+@media screen and (min-width: 667px) {
+  #header{
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 5%;
+  }
 
-.header-mobile{
-  width: 100%;
-  display: flex;
-}
+  .header--logo {
+    grid-column: 1/2;
+    padding-left: 0;
+  }
 
-.header-btn-hosting-mobile{
-  width: 50%;
-  padding: 1rem;
-  color: #0065FC;
-  background-color: transparent;
-  border-top:0;
-  border-right: 0;
-  border-bottom: 2px solid #0065FC;
-  border-left:0;
-  outline: none;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-}
-.header-btn-activitie-mobile{
-  width: 50%;
-  padding: 1rem;
-  background-color: transparent;
-  border-top:0;
-  border-right: 0;
-  border-bottom: 2px solid #F2F2F2;
-  border-left:0;
-  outline: none;
-    color: #000;
-  text-align: center;
-  text-decoration: none;
-}
+  .header--hosting-btn{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-top: solid 2px #0065FC;
+    border-bottom: none;
+  }
 
-@media screen and (min-width: 1024px) {
-.header-mobile{
-  display: none;
-}
-.header-btn-hosting-desk{
-  display: block;
-}
-.header-btn-activitie-desk{
-  display: block;
-}
+  .header--activitie-btn{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border-top: solid 2px #f2f2f2;
+    border-bottom: none;
+  }
+
+  .header--signup-btn{
+    grid-column: 5/6;
+    padding-right: 0;
+  }
 }
