@@ -147,6 +147,7 @@ flex-wrap: wrap;
     grid-row: 1/2;
     grid-column: 1/4;
   }
+  
   .filter-title {
     width: fit-content;
     margin: auto 1.5rem auto 0;
